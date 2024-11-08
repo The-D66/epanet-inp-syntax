@@ -1,0 +1,25 @@
+{
+  "name": "epanet-inp-syntax",
+  "displayName": "epanet-inp-syntax",
+  "description": "This Visual Studio Code extension provides syntax highlighting for EPANET INP files, making it easier to read and edit water distribution network models. It highlights sections, keywords, node IDs, control rules, numerical values, and comments, giving you a more intuitive coding experience when working with .inp files.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "epanet",
+      "aliases": ["EPANET", "epanet"],
+      "extensions": [".inp"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "epanet",
+      "scopeName": "source.inp",
+      "path": "./syntaxes/epanet.tmLanguage.json"
+    }]
+  }
+}

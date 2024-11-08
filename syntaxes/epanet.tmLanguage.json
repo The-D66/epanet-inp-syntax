@@ -1,0 +1,30 @@
+{
+	"scopeName": "source.inp",
+	"name": "EPANET INP File",
+	"patterns": [
+		{
+			"match": "\\[([A-Z]+)\\]",
+			"name": "keyword.control.inp"
+		},
+		{
+			"match": ";.*$",
+			"name": "comment.line.semicolon.inp"
+		},
+		{
+			"match": "\\b([A-Z0-9_]+)\\b",
+			"name": "entity.name.section.inp"
+		},
+		{
+			"match": "\\b\\d+(\\.\\d+)?\\b",
+			"name": "constant.numeric.inp"
+		},
+		{
+			"match": "\\b(YES|NO|OPEN|CLOSED|HEAD|PRV|PSV|PBV|FCV)\\b",
+			"name": "constant.language.inp"
+		}
+	],
+	"repository": {},
+	"fileTypes": [
+		"inp"
+	]
+}
