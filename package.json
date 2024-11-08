@@ -9,6 +9,7 @@
   "categories": [
     "Programming Languages"
   ],
+  "publisher": "TheD",
   "repository": {
     "type": "git",
     "url": "https://github.com/The-D66/epanet-inp-syntax.git"
